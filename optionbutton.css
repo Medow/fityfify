@@ -1,0 +1,86 @@
+div[class^="ckbx-style-"] input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.ckbx-style-9 {
+  width: 3em !important;
+  font-size: 24px;
+  position: relative;
+}
+
+.ckbx-style-9:before, .ckbx-style-9:after {
+  position: absolute;
+  font-size: .6em;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ckbx-style-9:before {
+  content: 'ON';
+  left: 0;
+  z-index: 1;
+  left: 0.4em;
+  top: .2em;
+}
+
+.ckbx-style-9:after {
+  content: 'OFF';
+  right: .4em;
+  top: .2em;
+}
+
+.ckbx-style-9 input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+
+.ckbx-style-9 label {
+  width: 2em;
+  height: 1em;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.ckbx-style-9 label:before {
+  content: '';
+  position: absolute;
+  width: 3em;
+  height: 1em;
+  transition: background 0.1s ease;
+  background: #F25F5C;
+  box-shadow: inset 0px 1px 1px rgba(171, 66, 63, 0.5);
+}
+
+.ckbx-style-9 label:after {
+  content: '';
+  position: absolute;
+  width: 1.5em;
+  height: 1em;
+  left: 0;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background: #fcfff4;
+  z-index: 2;
+}
+
+.ckbx-style-9 input[type=checkbox]:checked + label:before {
+  background: #70C1B3;
+  box-shadow: inset 0px 1px 1px rgba(84, 152, 140, 0.5);
+}
+
+.ckbx-style-9 input[type=checkbox]:checked + label:after {
+  left: 1.5em;
+}
+[class^=ckbx].ckbx-small {
+  font-size: .5em;
+}
+
+[class^=ckbx].ckbx-large {
+  font-size: 1.5em;
+}
+
+[class^=ckbx].ckbx-xlarge {
+  font-size: 2.5em;
+}
